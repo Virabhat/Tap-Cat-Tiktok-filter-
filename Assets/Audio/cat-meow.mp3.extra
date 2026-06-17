@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "97e45ed9-b91d-b0b3-b4a5-66836245e5b3",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "cat-meow",
+    "version": "0.1.0",
+    "rttiType": "AudioAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "mccState": "SUCCESS",
+    "objGuid": "",
+    "resourceFilePath": "/Users/ryuuuuuu/Downloads/cat-meow.mp3",
+    "references": []
+  }
+]

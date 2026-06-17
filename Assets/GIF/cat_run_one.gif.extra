@@ -1,0 +1,21 @@
+[
+  {
+    "guid": {
+      "a": "b2a53048-ac11-f7b2-5144-d747612af415",
+      "b": ""
+    },
+    "extraType": "ResItemGif",
+    "name": "cat_run_one",
+    "version": "0.1.0",
+    "rttiType": "GifAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "resourceFilePath": "/Users/ryuuuuuu/Downloads/cat_run_one.gif",
+    "references": []
+  }
+]

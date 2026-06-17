@@ -1,0 +1,28 @@
+[
+  {
+    "guid": {
+      "a": "3aa947b7-30f3-4de7-da24-ef000d08ac2b",
+      "b": ""
+    },
+    "extraType": "ResItemVSSubgraph",
+    "name": "Play Audio After Collision",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "assetPackageID": "7270261243628388353",
+    "resourceFilePath": "/Users/ryuuuuuu/Library/Application Support/EffectHouse/Instances/Instance1/EHpackage/7270261243628388353/Play Audio After Collision.ssubgraph",
+    "references": [
+      {
+        "guid": "8ba9acbd-95e2-169a-977f-b709fc2db9cc",
+        "propertyName": "SubgraphReference_0"
+      }
+    ],
+    "combinedWithNodeLibary": true,
+    "assetID": "7270261243628388353"
+  }
+]

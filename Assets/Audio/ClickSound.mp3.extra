@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "9c0fb020-d45e-cf2b-9b3c-0649c623c640",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "ClickSound",
+    "version": "0.1.0",
+    "rttiType": "AudioAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "mccState": "SUCCESS",
+    "objGuid": "",
+    "resourceFilePath": "/Users/ryuuuuuu/Downloads/ClickSound.mp3",
+    "references": []
+  }
+]

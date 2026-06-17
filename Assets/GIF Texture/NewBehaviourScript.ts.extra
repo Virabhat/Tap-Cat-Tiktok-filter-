@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "e49b2437-7683-32e5-63c7-5bf79aa15a7b",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "NewBehaviourScript",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]

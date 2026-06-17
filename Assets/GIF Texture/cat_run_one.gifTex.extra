@@ -1,0 +1,26 @@
+[
+  {
+    "guid": {
+      "a": "664ea357-deb7-7d2a-19e9-d79410d55a9c",
+      "b": ""
+    },
+    "extraType": "ResItemGifTexture",
+    "name": "cat_run_one",
+    "version": "0.1.0",
+    "rttiType": "Texture",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "resourceFilePath": "/Applications/Effect House.app/Contents/Plugins/Gif@2.0.25/resources/builtinJSAssets/default.gifTex",
+    "references": [
+      {
+        "guid": "b2a53048-ac11-f7b2-5144-d747612af415",
+        "propertyName": "gifAsset"
+      }
+    ]
+  }
+]

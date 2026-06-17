@@ -1,0 +1,19 @@
+[
+  {
+    "guid": {
+      "a": "11efc68a-eb11-0a33-963b-1606c08c96dd",
+      "b": ""
+    },
+    "extraType": "ResItemFolder",
+    "name": "Play Audio After Collision",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": []
+  }
+]

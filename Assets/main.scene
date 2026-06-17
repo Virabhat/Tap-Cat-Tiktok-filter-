@@ -1,0 +1,1214 @@
+%YAML 1.1
+--- !Scene &1
+name: !<str> ""
+guid: {a: 7875085725817850609, b: 329766013828765107}
+editSceneGuid: {a: 0, b: 0}
+calibrateVer: !<str> V5
+entities:
+  - __class: Entity
+    name: !<str> Camera
+    guid: {a: 10180214583793075010, b: 13085474825770890632}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 8}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 18393534764065644695, b: 16547619468206596491}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: PERSPECTIVE
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
+        orthoScale: 1
+        fitMode:
+          __class: CameraFitMode
+          value: NONE
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: RENDERQUEUE_AND_DEPTH
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> General
+    guid: {a: 8235238043598186243, b: 16840308208679013795}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 9}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 14792803682663561050, b: 6161520050080348315}
+        enabled: true
+        algorithmInput: {localId: 1, path: share://input.texture}
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 8001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Foreground
+    guid: {a: 9244634632357298816, b: 2062758756595471759}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 10}
+      - __class: EffectNode
+        name: !<str> ""
+        guid: {a: 9244532221188073694, b: 12447279056593755044}
+        enabled: true
+        algorithmInput: {localId: 1, path: share://input.texture}
+        outputTextures:
+          - {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        renderOrder: 9001
+        minorOrder: 0
+        type:
+          __class: EffectNodeTag
+          value: Other
+        version: 2
+        rendererType:
+          __class: RendererType
+          value: OpenGLES30
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera
+    guid: {a: 18180750984932254695, b: 8140432323675856771}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 11}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 1532119467583906490, b: 15653822349269629092}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
+        orthoScale: 20
+        fitMode:
+          __class: CameraFitMode
+          value: FILL
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: STRICT_SORT_ORDER
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: CAMERA_CHANGED
+    layer: 0
+  - __class: Entity
+    name: !<str> ClickSound
+    guid: {a: 14286499144749397668, b: 16031608023602101395}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 21}
+      - __class: DynamicComponent
+        name: !<str> AudioComponent
+        guid: {a: 12704556521971733788, b: 15532076173166915970}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 10973905393628466639, b: 6463925458698434473}
+          properties:
+            __class: Map
+            autoPlay: false
+            isMobilePreview: false
+            loopCount: 1
+            mute: false
+            playMode: !<str> Once
+            resourcePath: !<str> audio/9c0fb020-d45e-cf2b-9b3c-0649c623c640.mp3
+            volume: 100
+        enabled: true
+        className: !<str> AudioComponent
+    layer: 0
+  - __class: Entity
+    name: !<str> Timeline
+    guid: {a: 15294294109648186950, b: 9560188199161933450}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 22}
+      - __class: DynamicComponent
+        name: !<str> TimelinePlayer
+        guid: {a: 10542059548813057508, b: 6932034330283083196}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 12053181723665917313, b: 15303020744770284170}
+          properties:
+            __class: Map
+            autoPlay: true
+            initialValues:
+              __class: ScriptCustomObject
+              name: !<str> ""
+              guid: {a: 17603713247298598630, b: 17733366943362949823}
+              serializedProperty:
+                __class: ScriptSerializedProperty
+                name: !<str> ""
+                guid: {a: 5567657320040665169, b: 16501919658578240640}
+                properties:
+                  __class: Map
+                  __scriptClassName: !<str> TimelineInitialValues
+            isAudioMobilePreview: false
+            m_playMode: 0
+            sceneBindings:
+              __class: ScriptCustomObject
+              name: !<str> ""
+              guid: {a: 4992919568954292260, b: 14369714051289412490}
+              serializedProperty:
+                __class: ScriptSerializedProperty
+                name: !<str> ""
+                guid: {a: 5856408966688014060, b: 4641672907762406273}
+                properties:
+                  __class: Map
+                  __scriptClassName: !<str> SceneBindings
+        enabled: true
+        className: !<str> TimelinePlayer
+      - __class: Animator
+        name: !<str> ""
+        guid: {a: 3408287614711097250, b: 14572300563037544096}
+        enabled: true
+        runningWrapModes:
+          __class: Map
+          Guid(13494267949983075900, 11411313814205961399): 0
+        cullingMode:
+          __class: AnimatorCullingMode
+          value: CULL_UPDATE_PROPERTY
+        seekModeEnabled: false
+        version: 2
+        skipUpdateInSeekMode: false
+    layer: 0
+  - __class: Entity
+    name: !<str> cat-meow
+    guid: {a: 10469381801244031545, b: 14451378770164643758}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 23}
+      - __class: DynamicComponent
+        name: !<str> AudioComponent
+        guid: {a: 9890725629482948155, b: 10518998204311645361}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 16159685512488796999, b: 14986106316530649500}
+          properties:
+            __class: Map
+            autoPlay: false
+            isMobilePreview: false
+            loopCount: 1
+            mute: false
+            playMode: !<str> Once
+            resourcePath: !<str> audio/97e45ed9-b91d-b0b3-b4a5-66836245e5b3.mp3
+            volume: 100
+        enabled: true
+        className: !<str> AudioComponent
+    layer: 0
+  - __class: Entity
+    name: !<str> number
+    guid: {a: 13277526213700311599, b: 11489411028389546942}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 24}
+      - __class: Text
+        name: !<str> ""
+        guid: {a: 8521362051756191398, b: 251593081722487204}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 6579421465230268110, b: 2275629270311362715}
+          properties:
+            __class: Map
+            _arcAngle: 0
+            _autoFontSizeMax: 96
+            _autoFontSizeMin: 24
+            _bendType: 0
+            _bloomOption: 0
+            _currAnimationType: 0
+            _glowHAngle: 0
+            _glowVAngle: 0
+            _horizontalAlignment: 1
+            _inAnimationAssetID: !<str> ""
+            _inner_input: !<str> "Tap Cat\n\n\n\n\n"
+            _lineBreakType: 1
+            _loopAnimationAssetID: !<str> ""
+            _maxInputWords: 0
+            _outAnimationAssetID: !<str> ""
+            _tabType: 0
+            _textAdaptiveCanvasEnabled: false
+            _totalAnimationTime: 0
+            _userEditable: false
+            _verticalAlignment: 1
+            textLocale: 1
+        enabled: true
+        sortingOrder: 0
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        activeTextStyle: {localId: 25}
+        letters:
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 3119444347006536764, b: 2834063474197387172}
+            utf8: !<str> T
+            initialPosition: {x: -2537.228, y: 4453.125}
+            position: {x: -2537.228, y: 4453.125}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 15010479881661128094, b: 1192728339428276392}
+            utf8: !<str> a
+            initialPosition: {x: -1574.646, y: 4289.063}
+            position: {x: -1574.646, y: 4289.063}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 15729735174679249300, b: 11429085508520219527}
+            utf8: !<str> p
+            initialPosition: {x: -602.9104, y: 4125.868}
+            position: {x: -602.9104, y: 4125.868}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 16880008482347583567, b: 14680131980723222172}
+            utf8: !<str> " "
+            initialPosition: {x: 70.49243, y: 4286.458}
+            position: {x: 70.49243, y: 4286.458}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 13782302202255722533, b: 7729579778413277338}
+            utf8: !<str> C
+            initialPosition: {x: 886.8008, y: 4452.257}
+            position: {x: 886.8008, y: 4452.257}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 1966718300376458562, b: 7788625760366073216}
+            utf8: !<str> a
+            initialPosition: {x: 1971.638, y: 4289.063}
+            position: {x: 1971.638, y: 4289.063}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 18035739950498550333, b: 9031909723643855769}
+            utf8: !<str> t
+            initialPosition: {x: 2727.229, y: 4430.556}
+            position: {x: 2727.229, y: 4430.556}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 12484842863863921105, b: 14821030892836897453}
+            utf8: !<str> "\n"
+            initialPosition: {x: 2683.931, y: 4709.202}
+            position: {x: 2683.931, y: 4709.202}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 16880954886871571992, b: 6354007727485671577}
+            utf8: !<str> "\n"
+            initialPosition: {x: -781.25, y: 2973.091}
+            position: {x: -781.25, y: 2973.091}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 7152269847464410593, b: 8196264235920933050}
+            utf8: !<str> "\n"
+            initialPosition: {x: -781.25, y: 1236.979}
+            position: {x: -781.25, y: 1236.979}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 13424323717510873666, b: 2877379479969756800}
+            utf8: !<str> "\n"
+            initialPosition: {x: -781.25, y: -499.1316}
+            position: {x: -781.25, y: -499.1316}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+          - __class: Letter
+            name: !<str> ""
+            guid: {a: 12919233683627692459, b: 10250527172112868522}
+            utf8: !<str> "\n"
+            initialPosition: {x: -781.25, y: -2235.243}
+            position: {x: -781.25, y: -2235.243}
+            rotate: {x: 0, y: 0, z: 0}
+            scale: {x: 1, y: 1}
+            anchor: {x: 0, y: 0}
+            extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+            instanceColor: {r: 1, g: 1, b: 1, a: 1}
+            letterStyle: {localId: 25}
+        str: !<str> "Tap Cat\n\n\n\n\n"
+        richStr: !<str> "Tap Cat\n\n\n\n\n"
+        typeSettingParam: {localId: 28}
+        canvas: {localId: 29}
+        globalBackground: {localId: 30}
+        textLocale:
+          __class: TextLocale
+          value: RTLLocale
+        textDirectionLevel:
+          __class: TextDirectionLevel
+          value: LTR
+        globalAlpha: 1
+        resolutionAdapt: true
+        outlineMaxWidth: 0.2000000029802322
+        fixFontSize: true
+        useOwnRenderer: true
+        bloomEnable: false
+        bloomPath: !<str> ""
+        bloomColorCustomized: false
+        bloomColor: {x: 1, y: 1, z: 1, w: 1}
+        bloomStrength: 1
+        bloomRange: 1
+        bloomDirX: 0.5
+        bloomDirY: 0.5
+        bloomBlurDegree: 1
+        bloomRtSize: {x: 1440, y: 2560}
+        bloomRtSizeCoeff: 0
+        bloomMaterialProperties:
+          __class: Map
+          blurscale: 1
+          blurscale1: 1
+          sizeScale: 2
+          u_Strength: 2
+          u_StrengthX: 1
+          u_StrengthY: 1
+          u_light: 1
+          v_bloomPara: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+          v_color: {x: 1, y: 1, z: 1, w: 1}
+        vectorBackgroundEnabled: true
+        compatConfigs:
+          __class: Map
+          EnableBloomOptimization: true
+    layer: 0
+  - __class: Entity
+    name: !<str> cat_run
+    guid: {a: 450378141403725386, b: 3285990072424293266}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 31}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 7440962944572760358, b: 4510856296778342822}
+        enabled: true
+        sortingOrder: 2
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 664ea357-deb7-7d2a-19e9-d79410d55a9c}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        atlasIndex: 0
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+        batchingEnabled: false
+        reservedField: {x: -1, y: -1, z: -1, w: -1}
+      - __class: DynamicComponent
+        name: !<str> ""
+        guid: {a: 9387240615044413040, b: 15453782456577089180}
+        enabled: true
+        className: !<str> d0238e7a-3d1c-1c6c-7e8a-5bf485466be7
+    layer: 0
+  - __class: Entity
+    name: !<str> Face Binding
+    guid: {a: 6074739176100696273, b: 16691303344406178432}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 34}
+      - __class: DynamicComponent
+        name: !<str> FaceBinding
+        guid: {a: 16736413268604664877, b: 9888815188114888093}
+        serializedProperty:
+          __class: ScriptSerializedProperty
+          name: !<str> ""
+          guid: {a: 14145021317903791933, b: 4760760019402776960}
+          properties:
+            __class: Map
+            algorithmNode: !<str> facefitting_3d_0
+            algorithmType: 1
+            anchorType: 0
+            customAnchorPoint: {x: 0, y: 0, z: 0}
+            enableCustomBindingInput: false
+            faceFittingFOV: 60
+            faceIndex: 0
+            graphName: !<str> AlSubGraph_Fri15May2026070505GMT4897p9a
+        enabled: true
+        className: !<str> FaceBinding
+    layer: 0
+  - __class: Entity
+    name: !<str> 2D Camera (1)
+    guid: {a: 8737440689329747192, b: 17967702737027877018}
+    scene: {localId: 1}
+    selfvisible: true
+    components:
+      - {localId: 35}
+      - __class: Camera
+        name: !<str> ""
+        guid: {a: 2615930763671221241, b: 2211689922549364865}
+        enabled: true
+        layerVisibleMask: {__class: DynamicBitset, numBits: 64, values: [1, 0]}
+        renderOrder: 0
+        type:
+          __class: CameraType
+          value: ORTHO
+        clearColor: {r: 0, g: 0, b: 0, a: 1}
+        clearType:
+          __class: CameraClearType
+          value: DEPTH
+        alwaysClear: true
+        viewport: {x: 0, y: 0, w: 1, h: 1}
+        fovy: 60
+        fovType:
+          __class: CameraFovType
+          value: CUSTOM
+        orthoScale: 20
+        fitMode:
+          __class: CameraFitMode
+          value: NONE
+        zNear: 0.1000000014901161
+        zFar: 1000
+        renderTexture: {localId: 1, path: 00000000-0000-0000-0000-000000000009}
+        isRootCamera: false
+        sortMethod:
+          __class: CameraSortMethod
+          value: STRICT_SORT_ORDER
+        rtBackupMode:
+          __class: CameraRTBackupMode
+          value: NEVER
+    layer: 10
+  - __class: Entity
+    name: !<str> ConfettiPartyBurst
+    guid: {a: 5783388044938269765, b: 29601997959986619}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 36}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 14359448819375817354, b: 8169357295683355810}
+        enabled: true
+        sortingOrder: 3
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 16e52693-69e1-ee2b-fa63-cf85efc81b9d}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 10, y: 10}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        atlasIndex: 0
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+        batchingEnabled: false
+        reservedField: {x: -1, y: -1, z: -1, w: -1}
+    layer: 0
+  - __class: Entity
+    name: !<str> cat_dance
+    guid: {a: 6647691195541863455, b: 15741154134547348136}
+    scene: {localId: 1}
+    selfvisible: false
+    components:
+      - {localId: 37}
+      - __class: ImageRenderer
+        name: !<str> ""
+        guid: {a: 5279076987450876297, b: 12252402191674381697}
+        enabled: true
+        sortingOrder: 1
+        autoSortingOrder: true
+        useFrustumCulling: true
+        receiveShadow: true
+        lightProbeBlendMode:
+          __class: LightProbeBlendMode
+          value: OFF
+        entirePingPong: false
+        texture: {localId: 1, path: 664ea357-deb7-7d2a-19e9-d79410d55a9c}
+        opacity: 1
+        color: {r: 1, g: 1, b: 1, a: 1}
+        size: {x: 5.908678, y: 5.908678}
+        pivot: {x: 0.5, y: 0.5}
+        flipX: false
+        flipY: false
+        stretchMode:
+          __class: ImageStretchMode
+          value: Fit
+        atlasIndex: 0
+        imageMaterialProperties:
+          __class: Map
+          _ellipseX: 1
+          _ellipseY: 1
+          _filledRange: 1
+          _filledType: 0
+          _startPoint: 0
+        batchingEnabled: false
+        reservedField: {x: -1, y: -1, z: -1, w: -1}
+    layer: 0
+visible: true
+config:
+  __class: Map
+  APJSSystemList: !<str> GVSSSystem
+  RTInputDeferredCopy: true
+msaa:
+  __class: MSAAMode
+  value: _4X
+jsScriptSystems:
+  - !<str> js/AmazingProRuntime.js
+  - !<str> js/Graph/GraphSystem.js
+  - !<str> js/JSAssetSystem.js
+  - !<str> js/MultiLangSupport.js
+  - !<str> js/AmazingProEditor.js
+enableMultiTouch: false
+enableLightMultiPass: false
+pixelLightCount: 4
+resourceRendererType:
+  __class: RendererType
+  value: Auto
+--- !Transform &8
+name: !<str> ""
+guid: {a: 14145000689903744101, b: 6111037265461598351}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 9}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &9
+name: !<str> ""
+guid: {a: 12629985132416961300, b: 14387677276955654788}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 8}
+  - {localId: 22}
+  - {localId: 34}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &10
+name: !<str> ""
+guid: {a: 16161602404222794597, b: 14151901139456797330}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+children:
+  - {localId: 11}
+  - {localId: 35}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &11
+name: !<str> ""
+guid: {a: 13424736788183692255, b: 929432211545118878}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 10}
+children:
+  - {localId: 31}
+  - {localId: 21}
+  - {localId: 23}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &21
+name: !<str> ""
+guid: {a: 15512873015870232513, b: 2220518231184365213}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 11}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &22
+name: !<str> ""
+guid: {a: 6575755580212243884, b: 7830098351008042926}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 9}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &23
+name: !<str> ""
+guid: {a: 811343136692834125, b: 6574982131894360472}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 11}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &24
+name: !<str> ""
+guid: {a: 741463999620543019, b: 17169275209438030001}
+enabled: true
+localPosition: {x: -0.2802906, y: 9.625997, z: 3.926093}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 34}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: -8.969288, y: 308.0319}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: true
+--- !LetterStyle &25
+name: !<str> ""
+guid: {a: 5062092663331810042, b: 4989514318745631421}
+version: 101
+fontId: !<str> ""
+fontfamily: !<str> font/Classic.ttf
+fontSize: 416.6666564941406
+fontPixelSize: 0
+fontStyle:
+  __class: FontStyle
+  value: BOLD
+italicAngle: 10
+boldValue: 0.00800000037997961
+fontDecoration:
+  __class: FontDecorationType
+  value: NONE
+decorationWidth: 0.03999999910593033
+decorationOffset: 0.1500000059604645
+fill: {localId: 26}
+strokes:
+  - {localId: 32}
+  - {localId: 33}
+effectStyleId: !<str> ""
+effectStylePath: !<str> ""
+effectStyleParams: !<str> ""
+innerShadows:
+  - {localId: 27}
+letterBgColorRGBA: {r: 0, g: 0, b: 0, a: 1}
+letterBgAlpha: 0
+selected: false
+--- !LetterStyleLayer &26
+name: !<str> ""
+guid: {a: 8092191964272698986, b: 9655093306525708689}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 7731316924935164386, b: 8419905888200254647}
+  properties:
+    __class: Map
+    gradientColor1: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor2: {r: 1, g: 1, b: 1, a: 1}
+    gradientColor3: {r: 1, g: 1, b: 1, a: 1}
+type:
+  __class: LetterStyleLayerType
+  value: FILL
+enable: true
+alpha: 1
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0.9263158, g: 0, b: 1, a: 1}
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+textureNoPremultiply: true
+strokeWidth: 0.2000000029802322
+shadowDistance: 0
+shadowAngle: -45
+shadowFeather: -1
+shadowDiffuse: -1
+--- !LetterStyleLayer &27
+name: !<str> ""
+guid: {a: 17171366485467449232, b: 14832470376458691725}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 2180234294972848829, b: 5519867448011598227}
+  properties:
+    __class: Map
+    gradientColor1: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor2: {r: 0, g: 0, b: 0, a: 1}
+    gradientColor3: {r: 0, g: 0, b: 0, a: 1}
+type:
+  __class: LetterStyleLayerType
+  value: INNER_SHADOW
+enable: false
+alpha: 0.8999999761581421
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+textureNoPremultiply: true
+strokeWidth: 0.2000000029802322
+shadowDistance: 0.05000000074505806
+shadowAngle: -30
+shadowFeather: 0
+shadowDiffuse: -1
+--- !TextTypeSettingParam &28
+name: !<str> ""
+guid: {a: 10252786333556684144, b: 6218565615146141313}
+textAdaptiveCanvasEnabled: false
+autoAdaptDpiEnabled: false
+horizontalPadding: 0
+verticalPadding: 0
+letterSpacing: 0
+lineSpacing: 0
+wordWrapWidth: 15000
+wordWrapHeight: 15000
+canvasWHFixed: {x: 14400, y: 25600}
+typeSettingKind:
+  __class: TypesettingKind
+  value: HORIZONTAL
+typeSettingDirect:
+  __class: TypesettingDirect
+  value: LEFT2RIGHT
+typeSettingAlign:
+  __class: TypesettingAlign
+  value: CENTER
+typeSettingAlignVertical:
+  __class: TypesettingAlignVertical
+  value: CENTER
+lineBreakType:
+  __class: LineBreakType
+  value: AUTO_LINEBREAK
+enablePathTypeSetting: false
+mergingIntoOneLine: true
+arcCurveAngle: 0
+closestLineSpacing: false
+isWordWrappingEnabled: true
+autoWrapByWord: false
+wrappingEnabled: true
+autoFontSizeMax: 4166.66650390625
+autoFontSizeMin: -1
+numberOfLines: 0
+containerSize: {x: 14400, y: 25600}
+wrapMode:
+  __class: WrappingMode
+  value: Wrap
+targetFontSize: inf
+layoutMode:
+  __class: LayoutMode
+  value: FixedSize
+--- !TextCanvas &29
+name: !<str> ""
+guid: {a: 4270279931286368180, b: 16170219190164639412}
+textRect: {x: -7200, y: -5099.826, w: 14400, h: 10199.65}
+canvasEnabled: false
+canvasColor: {x: 0, y: 0, z: 0, w: 1}
+canvasRoundCornerEnabled: false
+canvasWrappText: false
+canvasRoundRadius: 0
+canvasRoundRadiusScale: 0
+canvasCustomizedEnabled: false
+canvasWHCustomized: {x: 0, y: 0}
+canvasOffsetCustomized: {x: 0, y: 0}
+renderToRT: false
+renderToRTSizeMode: 0
+RTMeshRect: {x: 0, y: 0, w: 0, h: 0}
+targetRTExtraSize: {x: 0, y: 0}
+canvasStyle:
+  __class: CanvasStyle
+  value: BoundingBox
+pixelTextRect: {x: -7200, y: -5099.826, w: 14400, h: 10199.65}
+--- !TextBackground &30
+name: !<str> ""
+guid: {a: 9388606991948531385, b: 18082538480952360889}
+enabled: true
+startIndex: 0
+endIndex: 0
+loop: false
+loopGap: 0
+renderType:
+  __class: TextBackgroundRenderType
+  value: SOLID
+color: {r: 0, g: 0, b: 0, a: 1}
+alpha: 1
+scale: 1
+rotation: 0
+expandX: 0
+expandY: 0
+offsetX: 0
+offsetY: 0
+roundness: 0
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001d--00000000-0000-0000-0000-00000000001d.png}
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+extraMatrix: {__class: Matrix4x4f, values: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]}
+gradientColors:
+  - {r: 0, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientStyle:
+  __class: GradientStyle
+  value: Linear
+--- !ScreenTransform &31
+name: !<str> ""
+guid: {a: 17170196724548527317, b: 3202042334880559761}
+enabled: true
+localPosition: {x: 0, y: -0.9190273, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 11}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: -29.40887}
+sizeDelta: {x: 482.5432, y: 856.7278}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: false
+--- !LetterStyleLayer &32
+name: !<str> ""
+guid: {a: 813774318917852895, b: 7236598526906669742}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 12628776267555332061, b: 2440180375317486768}
+  properties:
+    __class: Map
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+type:
+  __class: LetterStyleLayerType
+  value: STROKE
+enable: true
+alpha: 1
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 1, g: 1, b: 1, a: 1}
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+textureNoPremultiply: true
+strokeWidth: 0.05400000140070915
+shadowDistance: 0
+shadowAngle: -45
+shadowFeather: -1
+shadowDiffuse: -1
+--- !LetterStyleLayer &33
+name: !<str> ""
+guid: {a: 10971775556493012237, b: 14202672794227562162}
+serializedProperty:
+  __class: ScriptSerializedProperty
+  name: !<str> ""
+  guid: {a: 14360447734113329237, b: 12179440468694233730}
+  properties:
+    __class: Map
+    gradientColorPos2: 1
+    gradientColorPos3: 0.5
+type:
+  __class: LetterStyleLayerType
+  value: STROKE
+enable: true
+alpha: 1
+renderType:
+  __class: LetterStyleLayerRenderType
+  value: SOLID
+color: {r: 1, g: 1, b: 1, a: 1}
+gradientColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+gradientPoints: [0, 1]
+gradientAngle: 90
+gradientMode:
+  __class: LetterStyleLayerGradientMode
+  value: ALL
+texturePath: !<str> ""
+textureFlipX: false
+textureFlipY: false
+textureScale: 1
+textureAlpha: 1
+textureAngle: 0
+textureRange: -1
+textureBlend:
+  __class: LetterStyleLayerTextureBlend
+  value: NONE
+textureStretchMode:
+  __class: ImageStretchMode
+  value: Fit
+textureOffsetX: 0
+textureOffsetY: 0
+texture: {localId: 1, path: 00000000-0000-0000-0000-00000000001c--00000000-0000-0000-0000-00000000001c.png}
+textureNoPremultiply: true
+strokeWidth: 0.05400000140070915
+shadowDistance: 0
+shadowAngle: -45
+shadowFeather: -1
+shadowDiffuse: -1
+--- !Transform &34
+name: !<str> ""
+guid: {a: 3119004826069276508, b: 8982339848292249278}
+enabled: true
+localPosition: {x: 0, y: 0, z: 0}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 9}
+children:
+  - {localId: 24}
+  - {localId: 37}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !Transform &35
+name: !<str> ""
+guid: {a: 7948722399749413827, b: 15994844013984888453}
+enabled: true
+localPosition: {x: 0, y: 0, z: 40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 10}
+children:
+  - {localId: 36}
+mobility:
+  __class: Mobility
+  value: Dynamic
+--- !ScreenTransform &36
+name: !<str> ""
+guid: {a: 8809798031134378463, b: 9601645669688059547}
+enabled: true
+localPosition: {x: 0, y: 0, z: -40}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 35}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0, y: 0}
+sizeDelta: {x: 720, y: 1280}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: false
+--- !ScreenTransform &37
+name: !<str> ""
+guid: {a: 17241047800127798032, b: 4129281994521977781}
+enabled: true
+localPosition: {x: 0.006780624, y: 11.49865, z: 1.001639}
+localScale: {x: 1, y: 1, z: 1}
+localOrientation: {w: 1, x: 0, y: 0, z: 0}
+parent: {localId: 34}
+mobility:
+  __class: Mobility
+  value: Dynamic
+anchoredPosition: {x: 0.21698, y: 367.9567}
+sizeDelta: {x: 304.5998, y: 541.5107}
+pivot: {x: 0.5, y: 0.5}
+anchors: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+pixelsPerUnit: 32
+enablePivotMatrix: false

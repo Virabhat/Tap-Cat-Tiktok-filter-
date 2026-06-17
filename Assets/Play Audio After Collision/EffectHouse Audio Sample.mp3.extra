@@ -1,0 +1,23 @@
+[
+  {
+    "guid": {
+      "a": "8ba9acbd-95e2-169a-977f-b709fc2db9cc",
+      "b": ""
+    },
+    "extraType": "ResItemMP3",
+    "name": "EffectHouse Audio Sample",
+    "version": "0.1.0",
+    "rttiType": "AudioAsset",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "mccState": "SUCCESS",
+    "objGuid": "",
+    "assetPackageID": "7270261243628388353",
+    "resourceFilePath": "/Users/ryuuuuuu/Library/Application Support/EffectHouse/Instances/Instance1/EHpackage/7270261243628388353/EffectHouse Audio Sample.mp3",
+    "references": []
+  }
+]

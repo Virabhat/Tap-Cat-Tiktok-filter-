@@ -1,0 +1,22 @@
+[
+  {
+    "guid": {
+      "a": "d0238e7a-3d1c-1c6c-7e8a-5bf485466be7",
+      "b": ""
+    },
+    "extraType": "ResItemJSScript",
+    "name": "NewScriptComponent",
+    "version": "0.1.0",
+    "authorizationInfo": "",
+    "extendedInfo": {
+      "isVisibleInInspector": true,
+      "hideInPanel": false,
+      "expandInPanel": false
+    },
+    "objGuid": "",
+    "references": [],
+    "scriptAnnotation": [],
+    "needCompile": true,
+    "isUserScript": true
+  }
+]
